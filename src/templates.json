@@ -1,0 +1,85 @@
+{
+    "integrations-jwt": {
+        "name": "Integration using default jwt (JSON Web Token)",
+        "value": "integrations-jwt",
+        "git": "https://github.com/xhelpers/integrations-jwt.git",
+        "options": []
+    },
+    "integrations-jws": {
+        "name": "Integration using jws (JSON Web Signature)",
+        "value": "integrations-jws",
+        "git": "https://github.com/xhelpers/integrations-jws.git",
+        "options": []
+    },
+    "integrations-oauth2": {
+        "name": "Integration using oauth2",
+        "value": "integrations-oauth2",
+        "git": "https://github.com/xhelpers/integrations-oauth2.git"
+    },
+    "integrations-oauth-https": {
+        "name": "Integration using oauth + https",
+        "value": "integrations-oauth-https",
+        "git": "https://github.com/xhelpers/integrations-oauth-https.git",
+        "options": []
+    },
+    "integrations-soap": {
+        "name": "Integration using soap",
+        "value": "integrations-soap",
+        "git": "https://github.com/xhelpers/integrations-soap.git",
+        "options": []
+    },
+    "mailman-sendgrid": {
+        "name": "Template mailman sendgrid",
+        "value": "mailman-sendgrid",
+        "git": "https://github.com/xhelpers/mailman-sendgrid.git",
+        "options": []
+    },
+    "account-sql": {
+        "name": "Template default account-sql",
+        "value": "account-sql",
+        "git": "https://github.com/xhelpers/account-sql.git",
+        "options": []
+    },
+    "todo-sample": {
+        "name": "Sample todo api",
+        "value": "todo-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-todo-sample.git",
+        "options": []
+    },
+    "fileupload-sample": {
+        "name": "Sample fileupload",
+        "value": "fileupload-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-fileupload-sample.git",
+        "options": []
+    },
+    "video-streaming-sample": {
+        "name": "Sample video streaming api",
+        "value": "video-streaming-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-video-streaming.git",
+        "options": []
+    },
+    "websocket-sample": {
+        "name": "Sample websocket",
+        "value": "websocket-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-websocket-sample.git",
+        "options": []
+    },
+    "websocket-redis-sample": {
+        "name": "Sample websocket using redis",
+        "value": "websocket-redis-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-websocket-redis.git",
+        "options": []
+    },
+    "mailman-sample": {
+        "name": "Sample mailman",
+        "value": "mailman-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-mailman-sample.git",
+        "options": []
+    },
+    "account-sample": {
+        "name": "Sample account",
+        "value": "account-sample",
+        "git": "https://github.com/lucashamaguchi/xhelpers-account-sample.git",
+        "options": []
+    }
+}

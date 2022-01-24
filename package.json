@@ -1,0 +1,53 @@
+{
+  "name": "xhelpers-cli",
+  "version": "1.0.0",
+  "description": "xhelpers-cli to help create nodejs apps using xhelpers-api",
+  "bin": {
+    "xcli": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build-watch": "tsc-watch -p tsconfig.json --onSuccess \"node -e \\\"console.log('Do not close this terminal')\\\" \"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "dev": "export NODE_ENV=DEV && tsc-watch -p tsconfig.json --onSuccess \"node dist/index.js\"",
+    "start": "export NODE_ENV=PROD && node dist/index.js",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "export NODE_ENV=TEST && $(npm bin)/mocha -r ts-node/register --exit --reporter=spec --recursive src/tests/**.spec.ts",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xhelpers/xhelpers-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "xhelpers-api",
+    "api",
+    "nodejs"
+  ],
+  "author": "bh2",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/auth-basic": "^1.4.8",
+    "@octokit/rest": "^18.5.2",
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^8.3.0",
+    "configstore": "^6.0.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.0",
+    "inquirer": "^8.0.0",
+    "lodash": "^4.17.21",
+    "minimist": "^1.2.5",
+    "simple-git": "^2.37.0",
+    "simple-scaffold": "^0.7.0",
+    "touch": "^3.1.0",
+    "tsc": "^2.0.4",
+    "tsc-watch": "^4.6.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.9"
+  }
+}
