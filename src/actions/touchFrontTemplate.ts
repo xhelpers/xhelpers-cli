@@ -12,7 +12,7 @@ async function touch(path, content) {
 async function replaceVars(data, target, template) {
   return data
     .replace(/{name}/g, target)
-    .replace(/{context}/g, template.name)
+    .replace(/{context}/g, template.value)
     .replace(/{Component}/g, `${target}${template.name}`);
 }
 

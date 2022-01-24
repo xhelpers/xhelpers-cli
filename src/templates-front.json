@@ -5,11 +5,11 @@
         "files": [
             {
                 "name": "index.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
-                "name": "{name}.component.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/e9dc04907739f5620de678c0cd571f97/raw/e983806089c5ba2aecc778edbd77ccffc2f654c9/%257Bname%257D.component.tsx"
+                "name": "{name}.component.tsx",
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/%7Bname%7D.component.tsx"
             }
         ]
     },
@@ -19,11 +19,11 @@
         "files": [
             {
                 "name": "index.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
-                "name": "{name}.component.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/e9dc04907739f5620de678c0cd571f97/raw/e983806089c5ba2aecc778edbd77ccffc2f654c9/%257Bname%257D.component.tsx"
+                "name": "{name}.container.tsx",
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/%7Bname%7D.component.tsx"
             }
         ]
     },
@@ -33,11 +33,11 @@
         "files": [
             {
                 "name": "index.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
-                "name": "{name}.component.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/e9dc04907739f5620de678c0cd571f97/raw/e983806089c5ba2aecc778edbd77ccffc2f654c9/%257Bname%257D.component.tsx"
+                "name": "{name}.container.tsx",
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/%7Bname%7D.component.tsx"
             }
         ]
     },
@@ -47,35 +47,35 @@
         "files": [
             {
                 "name": "index.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.saga.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.action.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.constant.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.initialState.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.reducer.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.selector.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
                 "name": "{name}.subscriber.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             }
         ]
     },
@@ -85,11 +85,11 @@
         "files": [
             {
                 "name": "index.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/da7de358b9e735bed9798e1b33bd3f72/raw/28516d7fc0e7e877644dee74501cba00c5437437/index.ts"
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts"
             },
             {
-                "name": "{name}.screen.ts",
-                "gist": "https://gist.githubusercontent.com/callmeloureiro/e9dc04907739f5620de678c0cd571f97/raw/e983806089c5ba2aecc778edbd77ccffc2f654c9/%257Bname%257D.component.tsx"
+                "name": "{name}.screen.tsx",
+                "file": "https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/%7Bname%7D.component.tsx"
             }
         ]
     }
