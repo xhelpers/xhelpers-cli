@@ -32,7 +32,8 @@ async function touchTemplateFiles(target, template) {
   await mkdir(target);
 
   for (const file of files) {
-    const resp = await axios.get(file.gist);
+    logger.info(`Template url: ${file.file}`);
+    const resp = await axios.get(file.file);
     const { data } = resp;
     const strToSave = await replaceVars(data, target, template);
     const fileName = await replaceVars(file.name, target, template);
