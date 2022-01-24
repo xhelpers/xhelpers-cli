@@ -1,7 +1,7 @@
 {
   "name": "xhelpers-cli",
   "version": "1.0.0",
-  "description": "xhelpers-cli to help create nodejs apps using xhelpers-api",
+  "description": "xhelpers-cli A simple CLI tool to create and manage xhelpers-api projects",
   "bin": {
     "xcli": "./dist/index.js"
   },
@@ -21,6 +21,7 @@
   },
   "keywords": [
     "cli",
+    "xhelpers-cli",
     "xhelpers-api",
     "api",
     "nodejs"

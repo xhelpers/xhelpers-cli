@@ -14,7 +14,7 @@
 ## Install
 
 ```
-git clone https://github.com/xhelpers/xhelperscli.git
+git clone https://github.com/xhelpers/xhelpers-cli.git
 npm i -g ./
 ```
 
