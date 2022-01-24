@@ -89,23 +89,24 @@ program
   .command("touch")
   .alias("t")
   .option("-p, --path <path>", "destiny path folder to touch files")
-  .option("-t, --template <templateName>", "template")
+  .option("-c, --context <context>", "snippet context to use")
   .description("Create a new path with set of touched files")
-  .action(async ({ path, templateName }) => {
+  .action(async ({ path, context }) => {
     if (!path) {
       const { pathProject } = await inqQuestions.AskPathProject();
       path = pathProject;
     }
+
     if (files.directoryExists(path)) {
       logger.error(`Folder ${path} already exists!`);
       process.exit(1);
     }
 
-    if (!templateName) {
+    if (!context) {
       const { frontTemplate } = await inqQuestions.AskFrontTemplate();
-      templateName = frontTemplate;
+      context = frontTemplate;
     }
-    const template = templateFrontConfig[templateName];
+    const template = templateFrontConfig[context];
     touchFrontTemplate(path, template);
   });
 
