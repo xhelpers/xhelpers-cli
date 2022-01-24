@@ -1,6 +1,6 @@
 {
   "name": "xhelpers-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "xhelpers-cli A simple CLI tool to create and manage xhelpers-api projects",
   "bin": {
     "xcli": "./dist/index.js"
@@ -29,6 +29,7 @@
   "author": "bh2",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.25.0",
     "chalk": "^4.1.0",
     "commander": "^8.3.0",
     "download-git-repo": "^3.0.2",

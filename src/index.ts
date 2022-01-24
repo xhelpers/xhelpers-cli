@@ -10,7 +10,9 @@ import inqQuestions from "./commands";
 import { cloneFromGitTemplate } from "./actions/cloneFromGitTemplate";
 import { inspectCurrentPath as inspectXhelpersProject } from "./actions/inspectCurrentPath";
 import files from "./files";
+import { touchFrontTemplate } from "./actions/touchFrontTemplate";
 const templateConfig = require("./templates.json");
+const templateFrontConfig = require("./templates-front.json");
 
 // Trickery to cope with different relative paths for typescipt and javascript
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -81,6 +83,30 @@ program
     }
     const template = templateConfig[templateName];
     cloneFromGitTemplate(path, template);
+  });
+
+program
+  .command("touch")
+  .alias("t")
+  .option("-p, --path <path>", "destiny path folder to touch files")
+  .option("-t, --template <templateName>", "template")
+  .description("Create a new path with set of touched files")
+  .action(async ({ path, templateName }) => {
+    if (!path) {
+      const { pathProject } = await inqQuestions.AskPathProject();
+      path = pathProject;
+    }
+    if (files.directoryExists(path)) {
+      logger.error(`Folder ${path} already exists!`);
+      process.exit(1);
+    }
+
+    if (!templateName) {
+      const { frontTemplate } = await inqQuestions.AskFrontTemplate();
+      templateName = frontTemplate;
+    }
+    const template = templateFrontConfig[templateName];
+    touchFrontTemplate(path, template);
   });
 
 program.parse(process.argv);

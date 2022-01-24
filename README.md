@@ -32,7 +32,7 @@ Commands:
   help [command]       display help for command
   clone|c [options]    Start a new project by cloning a git repository  
   inspect|i [options]  Inspect current folder looking for (xhelpers-api) settings
-
+  touch|t [options]    Create a new path with set of touched files
 ```
 
 
