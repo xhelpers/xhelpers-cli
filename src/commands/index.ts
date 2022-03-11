@@ -1,13 +1,7 @@
-import { AskCloneProject } from "./AskCloneProject";
-import { AskDatabaseInformation } from "./AskDatabaseInformation";
-import { AskFrontTemplate } from "./AskFrontTemplate";
-import { AskPathProject } from "./AskPathProject";
-import { AskProjectType } from "./AskProjectType";
+import inspect from "./inspect";
+import touch from "./touch";
+import clone from "./clone";
 
 export default {
-  AskProjectType: new AskProjectType().getCommand,
-  AskDatabaseInformation: new AskDatabaseInformation().getCommand,
-  AskCloneProject: new AskCloneProject().getCommand,
-  AskPathProject: new AskPathProject().getCommand,
-  AskFrontTemplate: new AskFrontTemplate().getCommand,
+	commands: [inspect, clone, touch],
 };

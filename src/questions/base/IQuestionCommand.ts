@@ -1,4 +1,4 @@
 export interface IQuestionCommand {
-  name: string;
-  getCommand: any;
+	name: string;
+	getCommand: any;
 }

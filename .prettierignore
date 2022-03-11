@@ -1,0 +1,9 @@
+# ignore files to make sure to not change formats/configs
+README.md
+
+# json configs
+.prettierrc.json
+package-lock.json
+package.json
+tsconfig.json
+src/*.json
