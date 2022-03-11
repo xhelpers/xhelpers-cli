@@ -21,14 +21,18 @@ async function touchTemplateFiles(target, template) {
 		logger.error(`The requested template ${template} has no files.`);
 		return;
 	}
-	await mkdir(target);
-
+	await mkdir(target, { recursive: true });
+	const pathParts = target.split("/");
+	let nameFile = target;
+	if (pathParts?.length > 1) {
+		nameFile = pathParts.pop();
+	}
 	for (const file of files) {
 		logger.info(`Template url: ${file.file}`);
 		const resp = await axios.get(file.file);
 		const { data } = resp;
-		const strToSave = await replaceVars(data, target, template);
-		const fileName = await replaceVars(file.name, target, template);
+		const strToSave = await replaceVars(data, nameFile, template);
+		const fileName = await replaceVars(file.name, nameFile, template);
 		const filePath = `${target}/${fileName}`;
 		logger.info(`New File: ${filePath}`);
 		await touch(filePath, strToSave);

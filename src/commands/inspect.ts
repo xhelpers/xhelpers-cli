@@ -4,9 +4,14 @@ export default (program) => {
 	program
 		.command("inspect [path]")
 		.alias("i")
-		.option("-p, --path <path>", "path to inspect")
 		.description("Inspect path looking for (xhelpers-api) settings")
-		.action(({ path }) => {
+		.description(
+			`Inspect path looking for (xhelpers-api) settings
+			 path: xhelpers project path			 
+			 xcli i demo1
+			 `
+		)
+		.action((path) => {
 			inspectCurrentPath(path);
 		});
 };

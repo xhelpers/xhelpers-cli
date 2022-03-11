@@ -19,29 +19,75 @@ npm i -g ./
 ```
 
 ```
-Usage: xcli|v [options] [command]
-
-xcli commander
+Usage: xcli [options] [command]
 
 Options:
-  --debug              include debugging information, such as stack dump
-  -h, --help           display help for command
-  -V, --version        output the version number
+  --debug                        include debugging information, such as stack dump
+  -h, --help                     display help for command
+  -V, --version                  output the version number
 
 Commands:
-  help [command]       display help for command
-  clone|c [options]    Start a new project by cloning a git repository  
-  inspect|i [options]  Inspect current folder looking for (xhelpers-api) settings
-  touch|t [options]    Create a new path with set of touched files
+  help [command]                 display help for command
+  version|v                      display installed cli version
+
+  clone|c [path] [templateName]  - Start a new project by cloning a git repository
+  			 path: dir name to be created
+  			 templateName: template name[todo-sample, account-sample, mailman-sample]
+  			 xcli c demo1 todo-sample
+
+  inspect|i [path]               - Inspect path looking for (xhelpers-api) settings
+  			 path: xhelpers project path			 
+  			 xcli i demo1
+  			 
+  touch|t [path] [context]       - Create a new path with set of touched files
+  			 path: dir name to be created (must me on parent of dir)
+  			 context: context name[component, container, service, saga, screen]
+  			 xcli t demo1 component
 ```
 
+## Clone
+
+```
+  clone|c [path] [templateName]
+  			 path: dir name to be created
+  			 templateName: template name[todo-sample, account-sample, mailman-sample]
+  			 
+xcli c
+xcli c demo1 todo-sample
+```
+```
+? Inform project path: todo-sample
+? Select template to clone: Sample todo api
+  Integration using default jwt (JSON Web Token) 
+  Integration using jws (JSON Web Signature) 
+  Integration using oauth2 
+  Integration using oauth + https 
+  Integration using soap 
+  Template mailman sendgrid 
+  Template default account-sql 
+❯ Sample todo api 
+  Sample fileupload 
+  Sample video streaming api 
+  Sample websocket 
+  Sample websocket using redis 
+  Sample mailman 
+  Sample account 
+(Move up and down to reveal more choices)
+🔃  Copying files... Sample todo api https://github.com/xhelpers/xhelpers-todo-sample.git
+🔃  Sample todo api https://github.com/xhelpers/xhelpers-todo-sample.git
+✅  The files have been copied!
+✅  Repository cloned todo-sample
+```
 
 ## Inspect
 
 ```
-xcli i
-```
+inspect|i [path]           
+  			 path: xhelpers project path			  			 
 
+xcli i
+xcli i demo1
+```
 ```
 Running 'inspect' on path: 'PlataformaAccount'
 
@@ -83,33 +129,34 @@ Running 'inspect' on path: 'PlataformaAccount'
 Current folder is already a Git repository!
 ```
 
-## Clone
+
+## Touch
 
 ```
-xcli c
-```
+  touch|t [path] [context]
+  			 path: dir name to be created
+  			 context: context name[component, container, service, saga, screen]
 
+xcli t
+xcli t demo2 screen
+xcli t demo1/cp1 container
+xcli t demo1/cp1 component
+xcli t demo1/cp1 saga
+xcli t demo1/cp1 service
 ```
-? Inform project path: todo-sample
-? Select template to clone: Sample todo api
-  Integration using default jwt (JSON Web Token) 
-  Integration using jws (JSON Web Signature) 
-  Integration using oauth2 
-  Integration using oauth + https 
-  Integration using soap 
-  Template mailman sendgrid 
-  Template default account-sql 
-❯ Sample todo api 
-  Sample fileupload 
-  Sample video streaming api 
-  Sample websocket 
-  Sample websocket using redis 
-  Sample mailman 
-  Sample account 
-(Move up and down to reveal more choices)
-🔃  Copying files... Sample todo api https://github.com/xhelpers/xhelpers-todo-sample.git
-🔃  Sample todo api https://github.com/xhelpers/xhelpers-todo-sample.git
+```
+? Inform project path: demo1
+? Select xhelpers-front type: (frontTemplate) (Use arrow keys)
+❯ Component 
+  Container 
+  Service 
+  Saga 
+  Screen 
+
+🔃  Touching files... Component
 ✅  The files have been copied!
-✅  Repository cloned todo-sample
+🔃  Template url: https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/index.ts
+🔃  New File: demo1/index.ts
+🔃  Template url: https://raw.githubusercontent.com/xhelpers/xhelpers-front-snippets/main/%7Bname%7D.component.tsx
+🔃  New File: demo1/demo1.component.tsx
 ```
-

@@ -45,7 +45,7 @@ program
 	.command("version")
 	.alias("v")
 	.alias("-v")
-	.description("xcli commander")
+	.description("display installed cli version")
 	.action(async () => {
 		console.log(`\nxhelpers-cli: ${myPackage.version}\n`);
 	});

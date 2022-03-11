@@ -1,5 +1,6 @@
 const fs = require("fs");
 const pathMod = require("path");
+import { logger } from "../logs";
 
 export default {
 	getCurrentDirectoryBase: () => {
@@ -7,6 +8,12 @@ export default {
 	},
 	directoryExists: (path) => {
 		return fs.existsSync(path);
+	},
+	mustBeNewDirectory: (path) => {
+		if (fs.existsSync(path)) {
+			logger.error(`Folder ${path} already exists!`);
+			process.exit(1);
+		}
 	},
 	getFilesOfDirectory: (path) => {
 		return fs

@@ -1,5 +1,4 @@
 import { touchFrontTemplate } from "../actions/touchFrontTemplate";
-import { logger } from "../logs";
 import inqQuestions from "../questions";
 import files from "../files";
 
@@ -7,21 +6,21 @@ const templateFrontConfig = require("../templates-front.json");
 
 export default (program) => {
 	program
-		.command("touch")
+		.command("touch [path] [context]")
 		.alias("t")
-		.option("-p, --path <path>", "destiny path folder to touch files")
-		.option("-c, --context <context>", "snippet context to use")
-		.description("Create a new path with set of touched files")
-		.action(async ({ path, context }) => {
+		.description(
+			`Create a new path with set of touched files
+			 path: dir name to be created
+			 context: context name[component, container, service, saga, screen]
+			 xcli t demo1 component
+			 `
+		)
+		.action(async (path, context) => {
 			if (!path) {
 				const { pathProject } = await inqQuestions.AskPathProject();
 				path = pathProject;
 			}
-
-			if (files.directoryExists(path)) {
-				logger.error(`Folder ${path} already exists!`);
-				process.exit(1);
-			}
+			files.mustBeNewDirectory(path);
 
 			if (!context) {
 				const { frontTemplate } = await inqQuestions.AskFrontTemplate();
