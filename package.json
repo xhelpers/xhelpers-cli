@@ -1,5 +1,5 @@
 {
-  "name": "@xhelpers/xhelpers-cli",
+  "name": "xhelpers-cli",
   "version": "2.0.3",
   "description": "xhelpers-cli A simple CLI tool to create and manage xhelpers-api projects",
   "bin": {
