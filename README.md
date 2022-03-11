@@ -13,6 +13,12 @@
 
 ## Install
 
+npm 
+```
+npm i -g xhelpers-cli
+```
+
+local
 ```
 git clone https://github.com/xhelpers/xhelpers-cli.git
 npm i -g ./
