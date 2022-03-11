@@ -1,9 +1,9 @@
 {
-  "name": "xhelpers-cli",
+  "name": "@xhelpers/xhelpers-cli",
   "version": "2.0.2",
   "description": "xhelpers-cli A simple CLI tool to create and manage xhelpers-api projects",
   "bin": {
-    "xcli": "./dist/index.js"
+    "xcli": "dist/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/xhelpers/xhelpers-cli.git"
+    "url": "git+https://github.com/xhelpers/xhelpers-cli.git"
   },
   "keywords": [
     "cli",
@@ -41,5 +41,9 @@
   "devDependencies": {
     "@types/node": "^17.0.9",
     "prettier": "2.5.1"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/xhelpers/xhelpers-cli/issues"
+  },
+  "homepage": "https://github.com/xhelpers/xhelpers-cli#readme"
 }
