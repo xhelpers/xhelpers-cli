@@ -20,12 +20,13 @@
   },
   "keywords": [
     "cli",
+    "xhelpers",
     "xhelpers-cli",
     "xhelpers-api",
     "api",
     "nodejs"
   ],
-  "author": "bh2",
+  "author": "wmkdev",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.25.0",
