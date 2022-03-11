@@ -1,6 +1,6 @@
 {
   "name": "xhelpers-cli",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "xhelpers-cli A simple CLI tool to create and manage xhelpers-api projects",
   "bin": {
     "xcli": "./dist/index.js"
