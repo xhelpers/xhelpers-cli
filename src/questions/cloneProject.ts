@@ -1,5 +1,5 @@
 import { QuestionCommand } from "./base/QuestionCommand";
-const templateConfig = require("../templates-clone.json");
+import { templateCloneConfig } from "../files/templates";
 
 export class CloneProject extends QuestionCommand {
 	name: string;
@@ -8,7 +8,7 @@ export class CloneProject extends QuestionCommand {
 		super("cloneType");
 	}
 
-	cloneTypes = Object.values(templateConfig).map((item: any) => {
+	cloneTypes = Object.values(templateCloneConfig).map((item: any) => {
 		return {
 			name: item.name,
 			value: item.value,

@@ -1,8 +1,7 @@
 import { touchFrontTemplate } from "../actions/touchFrontTemplate";
 import inqQuestions from "../questions";
 import files from "../files";
-
-const templateFrontConfig = require("../templates-front.json");
+import { templateFrontSnippetsConfig } from "../files/templates";
 
 export default (program) => {
 	program
@@ -26,7 +25,15 @@ export default (program) => {
 				const { frontTemplate } = await inqQuestions.AskFrontTemplate();
 				context = frontTemplate;
 			}
-			const template = templateFrontConfig[context];
+			const template = templateFrontSnippetsConfig[context];
 			touchFrontTemplate(path, template);
+		});
+
+	program
+		.command("touchlist")
+		.alias("tl")
+		.description(`Display touch templates`)
+		.action(async () => {
+			console.table(templateFrontSnippetsConfig);
 		});
 };

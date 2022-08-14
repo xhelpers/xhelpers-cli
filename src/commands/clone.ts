@@ -1,8 +1,7 @@
 import { cloneFromGitTemplate } from "../actions/cloneFromGitTemplate";
 import files from "../files";
 import inqQuestions from "../questions";
-
-const templateConfig = require("../templates-clone.json");
+import { templateCloneConfig } from "../files/templates";
 
 export default (program) => {
 	program
@@ -25,7 +24,15 @@ export default (program) => {
 				const { cloneType } = await inqQuestions.AskCloneProject();
 				templateName = cloneType;
 			}
-			const template = templateConfig[templateName];
+			const template = templateCloneConfig[templateName];
 			cloneFromGitTemplate(path, template);
+		});
+
+	program
+		.command("clonelist")
+		.alias("cl")
+		.description(`Display clone templates`)
+		.action(async () => {
+			console.table(templateCloneConfig);
 		});
 };

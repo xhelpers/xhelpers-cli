@@ -1,5 +1,5 @@
+import { templateFrontSnippetsConfig } from "../files/templates";
 import { QuestionCommand } from "./base/QuestionCommand";
-const templateConfig = require("../templates-front.json");
 
 export class FrontTemplate extends QuestionCommand {
 	name: string;
@@ -8,12 +8,14 @@ export class FrontTemplate extends QuestionCommand {
 		super("frontTemplate");
 	}
 
-	TemplateTypes = Object.values(templateConfig).map((item: any) => {
-		return {
-			name: item.name,
-			value: item.value,
-		};
-	});
+	TemplateTypes = Object.values(templateFrontSnippetsConfig).map(
+		(item: any) => {
+			return {
+				name: item.name,
+				value: item.value,
+			};
+		}
+	);
 	getCommand = () => {
 		const questions = [
 			{

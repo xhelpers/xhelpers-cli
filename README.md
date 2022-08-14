@@ -1,14 +1,13 @@
+# xhelpers-cli
 
 ```
-           _ _                                                 _           
- __  _____| (_)   ___ ___  _ __ ___  _ __ ___   __ _ _ __   __| | ___ _ __ 
- \ \/ / __| | |  / __/ _ \| '_ ` _ \| '_ ` _ \ / _` | '_ \ / _` |/ _ \ '__|
-  >  < (__| | | | (_| (_) | | | | | | | | | | | (_| | | | | (_| |  __/ |   
- /_/\_\___|_|_|  \___\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|\__,_|\___|_|   
-                                                                           
-
- A simple CLI tool to create and manage xhelpers-api projects ;) 
-
+       _          _                        ____ _     ___ 
+ __  _| |__   ___| |_ __   ___ _ __ ___   / ___| |   |_ _|
+ \ \/ / '_ \ / _ \ | '_ \ / _ \ '__/ __| | |   | |    | | 
+  >  <| | | |  __/ | |_) |  __/ |  \__ \ | |___| |___ | | 
+ /_/\_\_| |_|\___|_| .__/ \___|_|  |___/  \____|_____|___|
+                   |_|                                    
+A CLI tool to create and manage xhelpers projects ;) 
 ```                                                     
 
 ## Install
@@ -25,7 +24,7 @@ npm i -g ./
 ```
 
 ```
-Usage: xcli [options] [command]
+Usage: xc [options] [command]
 
 Options:
   --debug                        include debugging information, such as stack dump
@@ -35,20 +34,20 @@ Options:
 Commands:
   help [command]                 display help for command
   version|v                      display installed cli version
-
-  clone|c [path] [templateName]  - Start a new project by cloning a git repository
+  clone|c [path] [templateName]  Start a new project by cloning a git repository
   			 path: dir name to be created
   			 templateName: template name[todo-sample, account-sample, mailman-sample]
-  			 xcli c demo1 todo-sample
-
-  inspect|i [path]               - Inspect path looking for (xhelpers-api) settings
+  			 xcli c demo1 todo-sample  			 
+  clonelist|cl                   Display clone templates  
+  inspect|i [path]               Inspect path looking for (xhelpers-api) settings
   			 path: xhelpers project path			 
-  			 xcli i demo1
-  			 
-  touch|t [path] [context]       - Create a new path with set of touched files
-  			 path: dir name to be created (must me on parent of dir)
+  			 xcli i demo1  			 
+  touch|t [path] [context]       Create a new path with set of touched files
+  			 path: dir name to be created
   			 context: context name[component, container, service, saga, screen]
-  			 xcli t demo1 component
+  			 xcli t demo1 component  			 
+  touchlist|tl                   Display touch templates
+  
 ```
 
 ## Clone
@@ -58,8 +57,8 @@ Commands:
   			 path: dir name to be created
   			 templateName: template name[todo-sample, account-sample, mailman-sample]
   			 
-xcli c
-xcli c demo1 todo-sample
+xc c
+xc c demo1 todo-sample
 ```
 ```
 ? Inform project path: todo-sample
@@ -91,8 +90,8 @@ xcli c demo1 todo-sample
 inspect|i [path]           
   			 path: xhelpers project path			  			 
 
-xcli i
-xcli i demo1
+xc i
+xc i demo1
 ```
 ```
 Running 'inspect' on path: 'PlataformaAccount'
@@ -143,12 +142,12 @@ Current folder is already a Git repository!
   			 path: dir name to be created
   			 context: context name[component, container, service, saga, screen]
 
-xcli t
-xcli t demo2 screen
-xcli t demo1/cp1 container
-xcli t demo1/cp1 component
-xcli t demo1/cp1 saga
-xcli t demo1/cp1 service
+xc t
+xc t demo2 screen
+xc t demo1/cp1 container
+xc t demo1/cp1 component
+xc t demo1/cp1 saga
+xc t demo1/cp1 service
 ```
 ```
 ? Inform project path: demo1

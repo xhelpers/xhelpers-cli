@@ -1,8 +1,8 @@
 import { logger } from "../logs";
 import axios from "axios";
 
-const { mkdir } = require("fs/promises");
-const fs = require("fs");
+import fs = require("fs");
+const mkdir: any = {};
 
 async function touch(path, content) {
 	fs.writeFileSync(path, content);

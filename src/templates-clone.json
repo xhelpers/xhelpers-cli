@@ -1,4 +1,16 @@
 {
+    "api-todo-mongoose": {
+        "name": "Sample API 'todo' mongoose -> mongodb",
+        "value": "api-todo-mongoose",
+        "git": "https://github.com/xhelpers/xhelpers-api-todo-mongoose.git",
+        "options": []
+    },
+    "api-todo-sequelize": {
+        "name": "Sample API 'todo' sequelize -> mysql",
+        "value": "api-todo-sequelize",
+        "git": "https://github.com/xhelpers/xhelpers-api-todo-sequelize.git",
+        "options": []
+    },
     "integrations-jwt": {
         "name": "Integration using default jwt (JSON Web Token)",
         "value": "integrations-jwt",
